@@ -1,0 +1,7 @@
+rootProject.name = 'MyApp'
+include ':react-native-sili-video-compression'
+project(':react-native-sili-video-compression').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sili-video-compression/android')
+include ':react-native-razorpay'
+project(':react-native-razorpay').projectDir = new File(rootProject.projectDir,   '../node_modules/react-native-razorpay/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
